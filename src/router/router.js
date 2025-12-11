@@ -17,6 +17,15 @@ const router = createBrowserRouter([
           },
         },
       },
+      {
+        path : "rps",
+        lazy : {
+          Component : async () => {
+            const component = await import("../pages/rps/RpsPage");
+            return component.default;
+          },
+        },
+      }
     ],
   },
 ]);

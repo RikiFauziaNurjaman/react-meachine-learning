@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 function Navbar() {
   return (
@@ -27,13 +28,13 @@ function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Homepage</a>
+             <NavLink to="/">Diabetes</NavLink>
             </li>
             <li>
-              <a>Portfolio</a>
+             <NavLink to="/rps">RPS</NavLink>
             </li>
             <li>
-              <a>About</a>
+             <NavLink to="#">About</NavLink>
             </li>
           </ul>
         </div>
